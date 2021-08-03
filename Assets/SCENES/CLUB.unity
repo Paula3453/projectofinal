@@ -447,16 +447,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3676106220276398781, guid: c120467790a12df4ba88048f0fec7a9a, type: 3}
       propertyPath: m_Color.b
-      value: 0.3529412
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 3676106220276398781, guid: c120467790a12df4ba88048f0fec7a9a, type: 3}
       propertyPath: m_Color.g
-      value: 0.17254902
+      value: 0.32072207
       objectReference: {fileID: 0}
     - target: {fileID: 3676106220276398781, guid: c120467790a12df4ba88048f0fec7a9a, type: 3}
       propertyPath: m_Color.r
-      value: 0.007843138
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3676106220367060453, guid: c120467790a12df4ba88048f0fec7a9a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 16245a83aa1daca409a64dd412470cc9, type: 3}
     - target: {fileID: 3676106220367060456, guid: c120467790a12df4ba88048f0fec7a9a, type: 3}
       propertyPath: m_Name
       value: Presupuesto
