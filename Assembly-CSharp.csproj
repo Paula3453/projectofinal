@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SCRIPT\LOAD_SCENE.cs" />
+    <Compile Include="Assets\SCRIPT\READ_SCRIP.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
