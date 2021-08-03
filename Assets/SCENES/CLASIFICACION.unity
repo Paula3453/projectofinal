@@ -486,7 +486,7 @@ PrefabInstance:
       objectReference: {fileID: 188073559}
     - target: {fileID: 7636125812070770365, guid: cf17c6204ec6aa747a6955789a1c5632, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Club
+      value: Equipo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf17c6204ec6aa747a6955789a1c5632, type: 3}

@@ -33,7 +33,7 @@ public class LOAD_SCENE : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
-    public void Presupuesto()
+    public void Entrenamiento()
     {
         SceneManager.LoadScene(7);
     }

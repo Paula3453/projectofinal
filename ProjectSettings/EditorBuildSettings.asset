@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/SCENES/CLASIFICACION.unity
     guid: b3a3e401e62baf24d99d22d89b1934cc
   - enabled: 1
-    path: Assets/SCENES/PRESUPUESTO.unity
+    path: Assets/SCENES/ENTRENAMIENTO.unity
     guid: c1ab2b77512f8a24cbdcb7405c4a155e
   m_configObjects: {}
