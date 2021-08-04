@@ -10,6 +10,10 @@ public class Spawn_Balones : MonoBehaviour
     public int Balones;
     public Text BalonesText;
     public float speed;
+    public int PwU_Shoot;
+    public Text ShootText;
+    public int PwU_GRL;
+    public Text GRLText;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,5 +45,16 @@ public class Spawn_Balones : MonoBehaviour
     {
         Balones = Balones + numToAdd;
         BalonesText.text = "x " + Balones;
+    }
+    
+    public void PowerUp_Shoot(int numToAddShoot)
+    {
+        PwU_Shoot = PwU_Shoot + numToAddShoot;
+        ShootText.text = "x " + PwU_Shoot;
+    }
+    public void PowerUp_GRL(int numToAddGRL)
+    {
+        PwU_GRL = PwU_GRL + numToAddGRL;
+        GRLText.text = "x " + PwU_GRL;
     }
 }
