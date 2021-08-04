@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SCENES/ENTRENAMIENTO.unity
     guid: c1ab2b77512f8a24cbdcb7405c4a155e
+  - enabled: 1
+    path: Assets/SCENES/CREARCLUB.unity
+    guid: 14d016264999f604aa9c2267862a70fc
   m_configObjects: {}
