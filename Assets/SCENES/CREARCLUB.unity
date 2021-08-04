@@ -642,6 +642,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9772b35313c286f4794d607f8277589f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &377666529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 1946714743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &377666533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377666529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Liverpool
 --- !u!1001 &465069102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -752,6 +770,78 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
   m_PrefabInstance: {fileID: 465069102}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &505613994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 1434315445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &505613998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505613994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Juventus
+--- !u!1 &520986950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 1957144026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &520986954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520986950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Manchester United
+--- !u!1 &590272289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 1008609906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &590272293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590272289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Atletico de Madrid
+--- !u!1 &776258535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 30611986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &776258539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776258535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Chelsea
 --- !u!1 &927257581
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +1036,60 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
   m_PrefabInstance: {fileID: 1008609906}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1089206528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 234861935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1089206532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089206528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "Inter de Mil\xE1n"
+--- !u!1 &1179986807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 1430998169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1179986811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179986807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Totteham
+--- !u!1 &1389226945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 2082251034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1389226949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389226945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Arsenal
 --- !u!1 &1396314704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,6 +1505,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1573516168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 1733908698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1573516172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573516168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Manchester City
+--- !u!1 &1665294169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 141240247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1665294173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665294169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "Bar\xE7a"
 --- !u!1 &1707471206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1806,42 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
   m_PrefabInstance: {fileID: 1733908698}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1744008799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 465069102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1744008803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744008799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "Mil\xE1n"
+--- !u!1 &1764057531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6101171710982411977, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
+  m_PrefabInstance: {fileID: 2180403825267710634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1764057532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764057531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a194610841314542810210471168280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Real Madrid
 --- !u!1 &1856356869
 GameObject:
   m_ObjectHideFlags: 0

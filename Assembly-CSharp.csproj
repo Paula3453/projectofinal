@@ -60,6 +60,7 @@
     <Compile Include="Assets\SCRIPT\Spawn_Balones.cs" />
     <Compile Include="Assets\SCRIPT\LOAD_SCENE.cs" />
     <Compile Include="Assets\SCRIPT\READ_SCRIP.cs" />
+    <Compile Include="Assets\SCRIPT\CLUB_SELCETION.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
