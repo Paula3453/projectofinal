@@ -14,30 +14,42 @@ public class Spawn_Balones : MonoBehaviour
     public Text ShootText;
     public int PwU_GRL;
     public Text GRLText;
+    public float InicioCD;
+    public float MaxTiempoCD;
+    public float TiempoCD;
+    public Text TiempoText;
     // Start is called before the first frame update
     void Start()
     {
         BalonesText.text = "x " + Balones;
+        InicioCD = 3;
+        TiempoCD = MaxTiempoCD;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && this.transform.position.x >= -5f)
+        InicioCD -= Time.deltaTime;
+        if (InicioCD <= 0 && TiempoCD >= 0)
         {
-            this.transform.position = this.transform.position + new Vector3(-1, 0, 0) * speed * Time.deltaTime;
-        }
-        if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && this.transform.position.x <= 5f)
-        {
-            this.transform.position = this.transform.position + new Vector3(1, 0, 0) * speed * Time.deltaTime;
-
-        }
-        if (Balones >= 1)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
+            TiempoCD -= Time.deltaTime;
+            TiempoText.text = ""+Mathf.RoundToInt(TiempoCD) + " \" ";
+            if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && this.transform.position.x >= -5f)
             {
-                Instantiate(Shoot, this.transform.position, Shoot.transform.rotation);
-                ContBalones(-1);
+                this.transform.position = this.transform.position + new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+            }
+            if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && this.transform.position.x <= 5f)
+            {
+                this.transform.position = this.transform.position + new Vector3(1, 0, 0) * speed * Time.deltaTime;
+
+            }
+            if (Balones >= 1)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    Instantiate(Shoot, this.transform.position, Shoot.transform.rotation);
+                    ContBalones(-1);
+                }
             }
         }
     }
@@ -46,7 +58,7 @@ public class Spawn_Balones : MonoBehaviour
         Balones = Balones + numToAdd;
         BalonesText.text = "x " + Balones;
     }
-    
+
     public void PowerUp_Shoot(int numToAddShoot)
     {
         PwU_Shoot = PwU_Shoot + numToAddShoot;

@@ -16,6 +16,10 @@ public class BALON : MonoBehaviour
     void Update()
     {
         this.transform.position += Vector3.up * speed * Time.deltaTime;
+        if (this.transform.position.y >= 6)
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
