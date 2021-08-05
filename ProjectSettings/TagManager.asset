@@ -6,6 +6,18 @@ TagManager:
   tags:
   - PowerUp_GRL
   - PowerUp_Shoot
+  - Madrid
+  - arsenal
+  - tottenham
+  - chelsea
+  - atletico
+  - juventus
+  - ACM
+  - manchester city
+  - liverpool
+  - manchester united
+  - milan
+  - "bar\xE7a"
   layers:
   - Default
   - TransparentFX
