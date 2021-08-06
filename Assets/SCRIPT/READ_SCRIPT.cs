@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class READ_SCRIPT : MonoBehaviour
 {   
@@ -12,7 +12,7 @@ public class READ_SCRIPT : MonoBehaviour
     public GameObject Canvas;
     public GameObject Canvas2;
 
-    public Text name;
+    public Text _name;
     public Sprite club; 
     // Start is called before the first frame update
     public void READ(Text write)
@@ -30,6 +30,6 @@ public class READ_SCRIPT : MonoBehaviour
     public void CanvasCLub()
     {
         Canvas2.SetActive(true);
-        name.text = input;
+        _name.text = input;
     }
 }

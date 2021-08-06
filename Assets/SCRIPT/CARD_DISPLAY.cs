@@ -22,5 +22,4 @@ public class CARD_DISPLAY : MonoBehaviour
         RatingTex.text = card.Rating.ToString();
         ShootingTex.text = card.Shooting.ToString();
     }
-
 }

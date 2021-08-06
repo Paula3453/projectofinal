@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 435793107764044387, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3a652fe31bd519c45941b1e61e9ee220, type: 3}
+      objectReference: {fileID: 21300000, guid: 44cf0d7f11c5ed041b40eb69afc5ef56, type: 3}
     - target: {fileID: 5541801433784872120, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -842,7 +842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1618,7 +1618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1926,7 +1926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1517581563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3109,7 +3109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
       propertyPath: m_SizeDelta.y
