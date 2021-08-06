@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/SCENES/EQUIPO.unity
     guid: e9fc6418f1d66d74183547f28f5a76e8
   - enabled: 1
-    path: Assets/SCENES/CLUB.unity
-    guid: 1c18da934856d944d9f64c45560210a0
+    path: Assets/SCENES/CREARCLUB.unity
+    guid: 14d016264999f604aa9c2267862a70fc
   - enabled: 1
     path: Assets/SCENES/PLANTILLA.unity
     guid: b5eea6d95b935694f988437e2875817b
@@ -29,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SCENES/ENTRENAMIENTO.unity
     guid: c1ab2b77512f8a24cbdcb7405c4a155e
-  - enabled: 1
-    path: Assets/SCENES/CREARCLUB.unity
-    guid: 14d016264999f604aa9c2267862a70fc
   m_configObjects: {}

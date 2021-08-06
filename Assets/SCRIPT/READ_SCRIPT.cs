@@ -6,30 +6,41 @@ using UnityEngine.UI;
 
 public class READ_SCRIPT : MonoBehaviour
 {   
-    public string input;
-    public Sprite inputclub;
-
+    public string textSaved;
+    public Sprite clubImageSaved;
+    public string clubNameSaved;
+    
     public GameObject Canvas;
     public GameObject Canvas2;
 
     public Text _name;
-    public Sprite club; 
+    public Image club;
+    public GameObject Escudos;
     // Start is called before the first frame update
     public void READ(Text write)
     {
-        input = write.text;
-        PlayerPrefs.SetString("NombreJugador", input);
-        Debug.Log(input);
+        textSaved = write.text;
+        PlayerPrefs.SetString("NombreJugador", textSaved);
+        Debug.Log(textSaved);
+        Escudos.SetActive(true);
     }
     public void CLUB(Image image)
     {
-        inputclub = image.sprite;
-        Debug.Log(inputclub);
-        Canvas.SetActive(false);
+        clubImageSaved = image.sprite;
+        Debug.Log(clubImageSaved);
+        
+        club.sprite = clubImageSaved;
+        _name.text = textSaved;
+        clubNameSaved = clubImageSaved.name;
+    }
+
+    public void ClubNameSaved(string clubName)
+    {
+        clubNameSaved = clubName;
     }
     public void CanvasCLub()
     {
         Canvas2.SetActive(true);
-        _name.text = input;
+        _name.text = textSaved;
     }
 }

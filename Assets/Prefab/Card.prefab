@@ -339,7 +339,7 @@ RectTransform:
   m_GameObject: {fileID: 4093261346266246006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 4093261346644467636}
   m_RootOrder: 3
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.19607845, g: 0.19607845, b: 0.19607845, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 11400000, guid: 47e2b2e65d46a214784203d37076a9d4, type: 2}
+  card: {fileID: 11400000, guid: b5cb5cd3eb9f61a4c88fd1064c9780b1, type: 2}
   PlayerNameText: {fileID: 4093261345160915951}
   PositionText: {fileID: 4093261346120919933}
   ArtWorkImage: {fileID: 4093261345576051464}
