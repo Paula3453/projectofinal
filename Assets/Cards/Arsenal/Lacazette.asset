@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lacazette
   m_EditorClassIdentifier: 
   PlayerName: Lacazette
-  Position: DC
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 0857ac39ffc45914ca47e4326cd5308b, type: 3}
   Rating: 83
   Shooting: 82

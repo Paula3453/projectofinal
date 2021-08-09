@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 296b770d3a8c9084784df9ca238fd6ca, type: 3}
   m_Name: "Piqu\xE9"
   m_EditorClassIdentifier: 
-  PlayerName: "Piqu\xE9"
-  Position: DFD
+  PlayerName: Pique
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: 6a6db586e50361e4a88a92fb32926fbe, type: 3}
   Rating: 86
   Shooting: 61

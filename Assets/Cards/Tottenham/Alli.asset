@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Alli
   m_EditorClassIdentifier: 
   PlayerName: Alli
-  Position: MI
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 10814789d12b11046920fab4c8fb11eb, type: 3}
   Rating: 83
   Shooting: 80

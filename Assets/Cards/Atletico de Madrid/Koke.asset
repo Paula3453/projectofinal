@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Koke
   m_EditorClassIdentifier: 
   PlayerName: Koke
-  Position: MI
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 7ed308bb81b9939478d02d502e4988c5, type: 3}
   Rating: 85
   Shooting: 75

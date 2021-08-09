@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Havertz
   m_EditorClassIdentifier: 
   PlayerName: Havertz
-  Position: EI
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 8c0a8fdb8985bd049b5e70aa1ee76e3f, type: 3}
   Rating: 85
   Shooting: 81

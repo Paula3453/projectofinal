@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sancho
   m_EditorClassIdentifier: 
   PlayerName: Sancho
-  Position: DD
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: ae2d597b1edfbae4d84748473a3ed039, type: 3}
   Rating: 87
   Shooting: 74

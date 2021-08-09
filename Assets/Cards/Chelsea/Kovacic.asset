@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kovacic
   m_EditorClassIdentifier: 
   PlayerName: Kovacic
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 5162f4613edaa4a4d9beda2a590973c5, type: 3}
   Rating: 83
   Shooting: 69

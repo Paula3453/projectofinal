@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Thiago
   m_EditorClassIdentifier: 
   PlayerName: Thiago
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 9bfc645e3a797fa43bc7ad730766081c, type: 3}
   Rating: 85
   Shooting: 72

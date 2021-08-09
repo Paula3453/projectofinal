@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lo Celso
   m_EditorClassIdentifier: 
   PlayerName: Lo Celso
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: ccd8ceed0632fca43b30bafd5744bb15, type: 3}
   Rating: 82
   Shooting: 77

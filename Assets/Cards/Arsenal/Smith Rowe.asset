@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Smith Rowe
   m_EditorClassIdentifier: 
   PlayerName: Smith Rowe
-  Position: MI
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 73551d6de694dee42b53b7c9727355a1, type: 3}
   Rating: 69
   Shooting: 64

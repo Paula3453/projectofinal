@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sanchez
   m_EditorClassIdentifier: 
   PlayerName: Sanchez
-  Position: DFI
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: 4f606b1971917e347b40d6e0d7c7804b, type: 3}
   Rating: 81
   Shooting: 45

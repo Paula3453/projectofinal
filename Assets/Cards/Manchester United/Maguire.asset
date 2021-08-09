@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Maguire
   m_EditorClassIdentifier: 
   PlayerName: Maguire
-  Position: DFD
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: d4280609bcf2c5147bbdf33b0067ff7d, type: 3}
   Rating: 82
   Shooting: 53

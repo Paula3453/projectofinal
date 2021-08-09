@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rafael Leao
   m_EditorClassIdentifier: 
   PlayerName: Rafael Leao
-  Position: DD
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: de4833d5d22c46c4fbfd887f7f3c0102, type: 3}
   Rating: 74
   Shooting: 72

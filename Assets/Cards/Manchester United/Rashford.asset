@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rashford
   m_EditorClassIdentifier: 
   PlayerName: Rashford
-  Position: DI
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: e6e308a3aeab4a945a16f2db05f26c51, type: 3}
   Rating: 85
   Shooting: 83

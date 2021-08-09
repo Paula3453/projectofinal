@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ramsey
   m_EditorClassIdentifier: 
   PlayerName: Ramsey
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: ef94468e35073364c8a7a6148a35a826, type: 3}
   Rating: 82
   Shooting: 77

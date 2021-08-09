@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Thiago Silva
   m_EditorClassIdentifier: 
   PlayerName: Thiago Silva
-  Position: DFD
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: eaccdba01d3f10345b0a857de93507f8, type: 3}
   Rating: 85
   Shooting: 54

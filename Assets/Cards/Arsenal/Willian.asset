@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Willian
   m_EditorClassIdentifier: 
   PlayerName: Willian
-  Position: DD
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: a54e6f49e47274b4c961bb904631c3de, type: 3}
   Rating: 82
   Shooting: 79

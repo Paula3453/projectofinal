@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Romagnoli
   m_EditorClassIdentifier: 
   PlayerName: Romagnoli
-  Position: DFD
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: 709adfc196f79294283f267309b8338e, type: 3}
   Rating: 83
   Shooting: 40

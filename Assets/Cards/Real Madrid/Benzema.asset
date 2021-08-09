@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Benzema
   m_EditorClassIdentifier: 
   PlayerName: Benzema
-  Position: DC
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 8cf2131417254d64caa32012b55292fd, type: 3}
   Rating: 89
   Shooting: 85

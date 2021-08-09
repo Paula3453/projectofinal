@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ziyech
   m_EditorClassIdentifier: 
   PlayerName: Ziyech
-  Position: DD
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: ed4371d25380cfb4b82af94fbdd14fd8, type: 3}
   Rating: 85
   Shooting: 76

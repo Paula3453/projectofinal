@@ -16,7 +16,21 @@ public class READ_SCRIPT : MonoBehaviour
     public Text _name;
     public Image club;
     public GameObject Escudos;
-    // Start is called before the first frame update
+
+    public CARD[] Real_Madrid;
+    public CARD[] Arsenal;
+    public CARD[] Tottenham;
+    public CARD[] Chelsea;
+    public CARD[] Atletico_de_Madrid;
+    public CARD[] Juventus;
+    public CARD[] Milan;
+    public CARD[] Manchester_City;
+    public CARD[] Liverpool;
+    public CARD[] Manchester_United;
+    public CARD[] Barcelona;
+    public CARD[] Inter_de_Milan;
+    public CARD_DISPLAY[] cards;
+
     public void READ(Text write)
     {
         textSaved = write.text;
@@ -32,6 +46,115 @@ public class READ_SCRIPT : MonoBehaviour
         club.sprite = clubImageSaved;
         _name.text = textSaved;
         clubNameSaved = clubImageSaved.name;
+
+        if (clubNameSaved == "Real_Madrid")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            { 
+                item.ChangePlayer(Real_Madrid[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Arsenal")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Arsenal[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Tottenham")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Tottenham[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Chelsea")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Chelsea[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Atletico_de_Madrid")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Atletico_de_Madrid[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Juventus")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Juventus[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Milan")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Milan[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Manchester_City")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Manchester_City[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Liverpool")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Liverpool[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Manchester_United")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Manchester_United[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Barcelona")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Barcelona[i]);
+                i++;
+            }
+        }
+        if (clubNameSaved == "Inter_de_Milan")
+        {
+            int i = 0;
+            foreach (var item in cards)
+            {
+                item.ChangePlayer(Inter_de_Milan[i]);
+                i++;
+            }
+        }
     }
 
     public void ClubNameSaved(string clubName)

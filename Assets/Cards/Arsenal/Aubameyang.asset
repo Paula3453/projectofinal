@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aubameyang
   m_EditorClassIdentifier: 
   PlayerName: Aubameyang
-  Position: DI
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 069067fa927a03947a085ac61c931dd6, type: 3}
   Rating: 87
   Shooting: 86

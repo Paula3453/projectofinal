@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Llorente
   m_EditorClassIdentifier: 
   PlayerName: Llorente
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 6a0e86db00af59449a46f9467c508207, type: 3}
   Rating: 82
   Shooting: 74

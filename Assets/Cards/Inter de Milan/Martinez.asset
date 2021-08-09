@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Martinez
   m_EditorClassIdentifier: 
   PlayerName: Martinez
-  Position: DD
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 6cd17d2eaba6e174f86ba844bcf09737, type: 3}
   Rating: 84
   Shooting: 82

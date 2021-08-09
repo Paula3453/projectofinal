@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lucas Moura
   m_EditorClassIdentifier: 
   PlayerName: Lucas Moura
-  Position: DD
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 2d6474eadcadcd24dbb9cb3d95e093a0, type: 3}
   Rating: 83
   Shooting: 78

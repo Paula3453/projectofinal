@@ -18,6 +18,7 @@ TagManager:
   - manchester united
   - milan
   - "bar\xE7a"
+  - POR
   layers:
   - Default
   - TransparentFX

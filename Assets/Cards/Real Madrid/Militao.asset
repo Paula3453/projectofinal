@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Militao
   m_EditorClassIdentifier: 
   PlayerName: Militao
-  Position: DFD
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: ef37656864ead5b469c7e6a8f1461c20, type: 3}
   Rating: 80
   Shooting: 50

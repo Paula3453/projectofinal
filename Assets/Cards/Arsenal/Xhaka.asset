@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Xhaka
   m_EditorClassIdentifier: 
   PlayerName: Xhaka
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 4cb5b9e2ccd290e40b5f7186b87308fb, type: 3}
   Rating: 80
   Shooting: 65

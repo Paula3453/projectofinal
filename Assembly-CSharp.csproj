@@ -59,7 +59,6 @@
     <Compile Include="Assets\SCRIPT\CARD.cs" />
     <Compile Include="Assets\SCRIPT\BALON.cs" />
     <Compile Include="Assets\SCRIPT\Spawn_Balones.cs" />
-    <Compile Include="Assets\SCRIPT\LOAD_SCENE.cs" />
     <Compile Include="Assets\SCRIPT\CARD_DISPLAY.cs" />
     <Compile Include="Assets\SCRIPT\PowerUps_Drop.cs" />
     <Compile Include="Assets\SCRIPT\Sawn_PowerUps.cs" />

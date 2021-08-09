@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Laporte
   m_EditorClassIdentifier: 
   PlayerName: Laporte
-  Position: DFD
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: 68a2e6986ca7fb848a59053b47fd37f7, type: 3}
   Rating: 87
   Shooting: 50

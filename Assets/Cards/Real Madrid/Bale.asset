@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bale
   m_EditorClassIdentifier: 
   PlayerName: Bale
-  Position: DD
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: eacf34b76f4dedc4282ae2811ba6484f, type: 3}
   Rating: 83
   Shooting: 84

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ibrahimovic
   m_EditorClassIdentifier: 
   PlayerName: Ibrahimovic
-  Position: DC
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 3fc5eb7826540d44b920e8a1158f9500, type: 3}
   Rating: 83
   Shooting: 88

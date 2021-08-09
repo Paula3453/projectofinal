@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Morata
   m_EditorClassIdentifier: 
   PlayerName: Morata
-  Position: 82
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: bd6f0616819ef2d4195f1ca0ea73e6d5, type: 3}
   Rating: 82
   Shooting: 80

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kessie
   m_EditorClassIdentifier: 
   PlayerName: Kessie
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 2174927fe75b3034ea2cb749d5416341, type: 3}
   Rating: 77
   Shooting: 72

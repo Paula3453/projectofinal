@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Firmino
   m_EditorClassIdentifier: 
   PlayerName: Firmino
-  Position: DC
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: c80e3a47578eeb643b50959e1ffa51ac, type: 3}
   Rating: 87
   Shooting: 80

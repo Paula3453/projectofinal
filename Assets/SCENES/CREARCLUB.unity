@@ -1261,6 +1261,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300777659}
   m_CullTransparentMesh: 1
+--- !u!114 &311150342 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088611502112783, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &312893588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1328,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &388645727 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088609722675084, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &403745825
@@ -1840,6 +1862,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &528982628 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088609486286101, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &543547294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,6 +2045,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &620266541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088611323965797, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &621012731 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8040954019131878901, guid: 9be51d73ddffc5845b3268fde448ac84, type: 3}
@@ -2147,6 +2191,162 @@ MonoBehaviour:
   _name: {fileID: 1495128537}
   club: {fileID: 403745827}
   Escudos: {fileID: 312893588}
+  Real_Madrid:
+  - {fileID: 11400000, guid: b5cb5cd3eb9f61a4c88fd1064c9780b1, type: 2}
+  - {fileID: 11400000, guid: d5f60432c062cd74f8c60297a75a5010, type: 2}
+  - {fileID: 11400000, guid: 47e2b2e65d46a214784203d37076a9d4, type: 2}
+  - {fileID: 11400000, guid: 8421798e645cc0342b52ae31f9482f9f, type: 2}
+  - {fileID: 11400000, guid: 11adcb6340308e44383f7f5c2504b374, type: 2}
+  - {fileID: 11400000, guid: 241f54e8ddb79cf4dabfabd88929a180, type: 2}
+  - {fileID: 11400000, guid: ee46f86c4b0d6e64c9cdac004fdc44c0, type: 2}
+  - {fileID: 11400000, guid: f96fc34cf887516449a9c7ba9ddfd0f5, type: 2}
+  - {fileID: 11400000, guid: 02ee50a6c742b7d4b816b31c33de1218, type: 2}
+  - {fileID: 11400000, guid: c920dc0e7a7922d40b310da454a9bb09, type: 2}
+  - {fileID: 11400000, guid: 5e34591ef5de8724a976f1e4428b21fa, type: 2}
+  Arsenal:
+  - {fileID: 11400000, guid: 0509f172d3ea21d4b951097adbc398ef, type: 2}
+  - {fileID: 11400000, guid: 89944e2f9ad1ed644b4d8c09bded49d6, type: 2}
+  - {fileID: 11400000, guid: 4781c30b6239a2b4086cedc9871e87aa, type: 2}
+  - {fileID: 11400000, guid: d497b98d0d0841347820636cb06367c6, type: 2}
+  - {fileID: 11400000, guid: 79081d3566e57fe41b57bb199af7dc7f, type: 2}
+  - {fileID: 11400000, guid: a8ed438aa216ee84d8f4d36817f5c046, type: 2}
+  - {fileID: 11400000, guid: 8bf7fd99a5c13024d834c3cbe223d427, type: 2}
+  - {fileID: 11400000, guid: e758a4d607e56a94aa4a1a81704fbdcb, type: 2}
+  - {fileID: 11400000, guid: 876aec7e4c024a945adc424776d54217, type: 2}
+  - {fileID: 11400000, guid: 7599a29228263e3459d2243ad9ef152e, type: 2}
+  - {fileID: 11400000, guid: 528ddc208e0d7ee4a92006e01d435614, type: 2}
+  Tottenham:
+  - {fileID: 11400000, guid: 316e16c075fd06c4791cfa5ac39a8d89, type: 2}
+  - {fileID: 11400000, guid: 586a4a073f14bd14086f614e57d6f46a, type: 2}
+  - {fileID: 11400000, guid: 5d708a45ae1d59940bf95f1c6dd9b547, type: 2}
+  - {fileID: 11400000, guid: d8c953b6ade5f8d429ed2c4d07d994f1, type: 2}
+  - {fileID: 11400000, guid: 667070c22e2d30c4cb5872f3e43f496b, type: 2}
+  - {fileID: 11400000, guid: da4f729ff1f067543baf353462788975, type: 2}
+  - {fileID: 11400000, guid: e546d657d4d4eb04fa7269ba5eed3cde, type: 2}
+  - {fileID: 11400000, guid: 383dd171478c3e94a8b4531966774e98, type: 2}
+  - {fileID: 11400000, guid: c0dddaccd94bffe4aae2499aa2d8283a, type: 2}
+  - {fileID: 11400000, guid: eaa2a178913059f45ae2364d1605647c, type: 2}
+  - {fileID: 11400000, guid: 7056045e5fd15574fbbd1803090d7ff4, type: 2}
+  Chelsea:
+  - {fileID: 11400000, guid: b6199145f19786847b932b171fc312b7, type: 2}
+  - {fileID: 11400000, guid: 65cecd68767dcde4aa08d000e6a900e6, type: 2}
+  - {fileID: 11400000, guid: eb458ee4d9cc44c4bbb4590022f1d4a0, type: 2}
+  - {fileID: 11400000, guid: 952c783a0183cb4458ba390b066e9b9c, type: 2}
+  - {fileID: 11400000, guid: 30c3b3ba2af9e4a409fef002352127ce, type: 2}
+  - {fileID: 11400000, guid: ce97d66729139d84a958f1560f42c1d4, type: 2}
+  - {fileID: 11400000, guid: 80acc37468164d043884ffed09940de7, type: 2}
+  - {fileID: 11400000, guid: 98a4edab02940d84db22518629a7c072, type: 2}
+  - {fileID: 11400000, guid: 426cc141b8142be4791b4131348925d6, type: 2}
+  - {fileID: 11400000, guid: 3a7b5d30874a1bd449d762c937c45b03, type: 2}
+  - {fileID: 11400000, guid: e7e1daca408e72b4689401f5c7538e6b, type: 2}
+  Atletico_de_Madrid:
+  - {fileID: 11400000, guid: 66925cca63665a54490c239bb149ba45, type: 2}
+  - {fileID: 11400000, guid: 5514d4acb61e13040b4982ee6308b920, type: 2}
+  - {fileID: 11400000, guid: 34f9f03b7cfd6b04ca27155e3ef890d8, type: 2}
+  - {fileID: 11400000, guid: 1ac78dc38b74a1443b22bc450ae8e3aa, type: 2}
+  - {fileID: 11400000, guid: d9f8786a61ab5f243b6b69e196272c4f, type: 2}
+  - {fileID: 11400000, guid: a39726da55ec4584b863c0ed1a4b9eee, type: 2}
+  - {fileID: 11400000, guid: 4e02dd5b902fc1a43beda446b6be397c, type: 2}
+  - {fileID: 11400000, guid: 35ac264c6db90944399bbd2108b8d76e, type: 2}
+  - {fileID: 11400000, guid: 555a17043ea4440429258b6bb04571c1, type: 2}
+  - {fileID: 11400000, guid: eb3c8248b29713143bb6deda5810145d, type: 2}
+  - {fileID: 11400000, guid: b96f254d6a1055b4690a666baa934da4, type: 2}
+  Juventus:
+  - {fileID: 11400000, guid: 72ebdb9eb0257b44b97eefad651faf7b, type: 2}
+  - {fileID: 11400000, guid: 158cd189b9bd91a4dae2249e9cf168b0, type: 2}
+  - {fileID: 11400000, guid: 7de97ff053e4db3419928aff3a6e2961, type: 2}
+  - {fileID: 11400000, guid: 8aa481e4fdf2d40449c1cdc0b2aabd4e, type: 2}
+  - {fileID: 11400000, guid: 3c0fb139f3259f949a45d01e61faa179, type: 2}
+  - {fileID: 11400000, guid: df071bab4e47e1e4199ab165673d53f9, type: 2}
+  - {fileID: 11400000, guid: a81794c867680f642a1dfc999dc1a73c, type: 2}
+  - {fileID: 11400000, guid: fb78409a46cc2684a924d80aec39bafa, type: 2}
+  - {fileID: 11400000, guid: be7a988dcad303941a002eaa7e8044e0, type: 2}
+  - {fileID: 11400000, guid: 9dc877f03ddb53944a115f3c1779b439, type: 2}
+  - {fileID: 11400000, guid: 579b48f0b8ac73041a18088a759ac587, type: 2}
+  Milan:
+  - {fileID: 11400000, guid: a358989a49c37d648b5ea40c503eab5f, type: 2}
+  - {fileID: 11400000, guid: 067003ba80cfdcf439b83875ad9819c2, type: 2}
+  - {fileID: 11400000, guid: 2cd06b258bc4d124fb41a77898f41e91, type: 2}
+  - {fileID: 11400000, guid: d27322a80f5766844b2375707b76d127, type: 2}
+  - {fileID: 11400000, guid: d415992cbbf14344cac35a30db1915cb, type: 2}
+  - {fileID: 11400000, guid: 28052461e0434e0458ddc0316703a3c3, type: 2}
+  - {fileID: 11400000, guid: cdc36843cd4b4254e98f4273371c91b6, type: 2}
+  - {fileID: 11400000, guid: fae9bd01899d1f74e9ac0907043056c8, type: 2}
+  - {fileID: 11400000, guid: 806802b1eb380cc4882cb53b1214d4b0, type: 2}
+  - {fileID: 11400000, guid: 66caa37eef7984c44a2d933648f30592, type: 2}
+  - {fileID: 11400000, guid: 97bbcc244150f0f4282b7499803efac2, type: 2}
+  Manchester_City:
+  - {fileID: 11400000, guid: 3fec76af75df4724aa2c6578949076cf, type: 2}
+  - {fileID: 11400000, guid: eb9ce86a2fbceb34ab4c7ca891f55729, type: 2}
+  - {fileID: 11400000, guid: dcbbdfc5366229a4a921c619df1e1890, type: 2}
+  - {fileID: 11400000, guid: c426505f50aba5645bb7a7974fe33651, type: 2}
+  - {fileID: 11400000, guid: 9b82501e83eebd44c8a5ced560e59446, type: 2}
+  - {fileID: 11400000, guid: 56f9110f631d9f348967db059bb3f888, type: 2}
+  - {fileID: 11400000, guid: 11fbaeecde847254ba95c856ee7a680c, type: 2}
+  - {fileID: 11400000, guid: ec6aa4e0a7843894d82043687e34a9ae, type: 2}
+  - {fileID: 11400000, guid: 242af0265db5347478cb4678094ba11f, type: 2}
+  - {fileID: 11400000, guid: 14327e4ce74a44f40b28c7066fb297e1, type: 2}
+  - {fileID: 11400000, guid: 0d957af984353534e81e4e39370234fa, type: 2}
+  Liverpool:
+  - {fileID: 11400000, guid: 8199ea3a65623cf4d8f6210eed6dd6c0, type: 2}
+  - {fileID: 11400000, guid: 61cf539bb04feb444bc992a83a9732ea, type: 2}
+  - {fileID: 11400000, guid: affbed998a1b49a4ea3001ab632f3d58, type: 2}
+  - {fileID: 11400000, guid: 81efc6294ad840940a355e551f368033, type: 2}
+  - {fileID: 11400000, guid: a18896685415da34692f6d1b37aa1327, type: 2}
+  - {fileID: 11400000, guid: 8aa72940ec207434b88090aac04c15d6, type: 2}
+  - {fileID: 11400000, guid: e869168463cdce84c8ac179eec3b2f6d, type: 2}
+  - {fileID: 11400000, guid: 2db3c63d46ced094692bf43c5e2d3e40, type: 2}
+  - {fileID: 11400000, guid: 543f8f52e7f8b6a47b2028292c602378, type: 2}
+  - {fileID: 11400000, guid: 522e7b791696bcd468301d25ec508ca0, type: 2}
+  - {fileID: 11400000, guid: 89cc7f22424314440b10e7df09ddcb4c, type: 2}
+  Manchester_United:
+  - {fileID: 11400000, guid: b1f3f0e2ab7085344aa4481553c61497, type: 2}
+  - {fileID: 11400000, guid: becd1b9a2ddd80b44b7d6ce5d73af507, type: 2}
+  - {fileID: 11400000, guid: d87bccab79fc0194fa0c5d836866e32d, type: 2}
+  - {fileID: 11400000, guid: 921c8b1ca1ecb514bb0e26ee47c64d72, type: 2}
+  - {fileID: 11400000, guid: e41e8bb74c3461b40adb62dd50a3cf40, type: 2}
+  - {fileID: 11400000, guid: d430541507be94149a60bd948c9b3942, type: 2}
+  - {fileID: 11400000, guid: 32a15cefbb770124ab0364ba15d87e52, type: 2}
+  - {fileID: 11400000, guid: 79a2b384b91be2845aa5d0bfd810f10d, type: 2}
+  - {fileID: 11400000, guid: 731554487521ec946a0fda20cb16dc1a, type: 2}
+  - {fileID: 11400000, guid: 25d5b190545c53b4a9448bf0f9cdcd42, type: 2}
+  - {fileID: 11400000, guid: 4301b50169933e748b08ddba913bb419, type: 2}
+  Barcelona:
+  - {fileID: 11400000, guid: 5fd5627e8833d614f816f57723a74376, type: 2}
+  - {fileID: 11400000, guid: a6a0d159abe183c41ac9d80a35132adb, type: 2}
+  - {fileID: 11400000, guid: 101ba13a17c17c34db51e779f520ad01, type: 2}
+  - {fileID: 11400000, guid: 0a4bf4fff2f7da54caec8ed743d57ce1, type: 2}
+  - {fileID: 11400000, guid: c5eb1276d2fea464a9147f2f8c14e8f0, type: 2}
+  - {fileID: 11400000, guid: 32b970a83cbaa7c4ab60938eb73ac504, type: 2}
+  - {fileID: 11400000, guid: 1c660c3020b2b2f41b96ba45241fe269, type: 2}
+  - {fileID: 11400000, guid: 7c671c18a1a54284cacc9baaeddd3743, type: 2}
+  - {fileID: 11400000, guid: 652fd7f099c1c584a8206148e098e054, type: 2}
+  - {fileID: 11400000, guid: e9e5b9ddc180a384c8db1eb6d7e37623, type: 2}
+  - {fileID: 11400000, guid: 270723cf411d5084f8adfbfdad5d9c89, type: 2}
+  Inter_de_Milan:
+  - {fileID: 11400000, guid: 3178f6732979d9247976ffb608f23d1c, type: 2}
+  - {fileID: 11400000, guid: 72d34460ec67a5743a47b914dee34f2a, type: 2}
+  - {fileID: 11400000, guid: 8d28898d1f371f546aaf3e9ea9d8c2a9, type: 2}
+  - {fileID: 11400000, guid: da6df5cd2adabc94c86a83c91fcdddf5, type: 2}
+  - {fileID: 11400000, guid: 6828d8ff5a7e8c54ba29f5e5a894847a, type: 2}
+  - {fileID: 11400000, guid: 85b0fa493e0f2104c8b5e1f5b7fb93e9, type: 2}
+  - {fileID: 11400000, guid: bd9bb8041f13d004a8ae1c6aa2a2a46b, type: 2}
+  - {fileID: 11400000, guid: 3b4013b5e5288a345842a955d7dfce76, type: 2}
+  - {fileID: 11400000, guid: 343ffab9c9792524a9f99d4885ba124c, type: 2}
+  - {fileID: 11400000, guid: 8a8fd743166af1e4c9315e8722e49006, type: 2}
+  - {fileID: 11400000, guid: 62b4fa12cea0dda4a8c0aa4222c3cb5d, type: 2}
+  cards:
+  - {fileID: 1525898869}
+  - {fileID: 1873133844}
+  - {fileID: 620266541}
+  - {fileID: 1511907497}
+  - {fileID: 1634274114}
+  - {fileID: 986422844}
+  - {fileID: 528982628}
+  - {fileID: 388645727}
+  - {fileID: 1819066617}
+  - {fileID: 812017578}
+  - {fileID: 311150342}
 --- !u!1 &706559793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2799,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e17953da70215e4cb6fc22af7ecc4c6, type: 3}
+--- !u!114 &812017578 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088611590869953, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &906368662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +2911,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &986422844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088610038397968, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1003129756
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,6 +3361,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1521088611323965797, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+      propertyPath: card
+      value: 
+      objectReference: {fileID: 11400000, guid: 47e2b2e65d46a214784203d37076a9d4, type: 2}
     - target: {fileID: 3302776291808186498, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3235,6 +3461,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3302776292178724737, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+      propertyPath: m_TagString
+      value: POR
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302776292178724743, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+      propertyPath: card
+      value: 
+      objectReference: {fileID: 11400000, guid: e9e5b9ddc180a384c8db1eb6d7e37623, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
 --- !u!114 &1089206530 stripped
@@ -4228,6 +4462,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495128535}
   m_CullTransparentMesh: 1
+--- !u!114 &1511907497 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088610686034204, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1517581562
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,6 +4576,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1525898869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3302776292178724743, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1542745085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4590,6 +4846,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1634274114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088611436600414, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1662481460
 GameObject:
   m_ObjectHideFlags: 0
@@ -5288,6 +5555,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1819066617 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088610875979473, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856356869
 GameObject:
   m_ObjectHideFlags: 0
@@ -5365,6 +5643,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 350e0405cee892d43b17e9a17d13edab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1873133844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1521088610702265845, guid: 2ba89abe8b39fa9438a0dfaf7e9b80d9, type: 3}
+  m_PrefabInstance: {fileID: 1079856862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a572303114f895b498df52549df0d284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1887727425

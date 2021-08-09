@@ -22,4 +22,14 @@ public class CARD_DISPLAY : MonoBehaviour
         RatingTex.text = card.Rating.ToString();
         ShootingTex.text = card.Shooting.ToString();
     }
+
+    public void ChangePlayer(CARD newCard)
+    {
+        card = newCard;
+        PlayerNameText.text = card.PlayerName;
+        PositionText.text = card.Position;
+        ArtWorkImage.sprite = card.ArtWork;
+        RatingTex.text = card.Rating.ToString();
+        ShootingTex.text = card.Shooting.ToString();
+    }
 }

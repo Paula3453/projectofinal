@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bonaventura
   m_EditorClassIdentifier: 
   PlayerName: Bonaventura
-  Position: MI
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 6330f267d80a3bb42a18dfd6412f5b0d, type: 3}
   Rating: 80
   Shooting: 77

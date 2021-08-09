@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Skriniar
   m_EditorClassIdentifier: 
   PlayerName: Skriniar
-  Position: DFI
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: 86581e01b6e1b6945ac5e85bac90ddc8, type: 3}
   Rating: 85
   Shooting: 41

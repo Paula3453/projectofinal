@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kjaer
   m_EditorClassIdentifier: 
   PlayerName: Kjaer
-  Position: DFI
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: b411d4caf4e294143bb8ca0555cd9e71, type: 3}
   Rating: 80
   Shooting: 55

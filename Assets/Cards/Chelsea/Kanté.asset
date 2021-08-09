@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 296b770d3a8c9084784df9ca238fd6ca, type: 3}
   m_Name: "Kant\xE9"
   m_EditorClassIdentifier: 
-  PlayerName: "Kant\xE9"
+  PlayerName: Kante
   Position: MC
   ArtWork: {fileID: 21300000, guid: 131d5589548ad554aac5cbe17a70c986, type: 3}
   Rating: 88

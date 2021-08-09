@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fernandes
   m_EditorClassIdentifier: 
   PlayerName: Fernandes
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 40794574dda5e99478ff4bcc3706a2ba, type: 3}
   Rating: 87
   Shooting: 83

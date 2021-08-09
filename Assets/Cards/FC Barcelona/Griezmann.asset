@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Griezmann
   m_EditorClassIdentifier: 
   PlayerName: Griezmann
-  Position: DI
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: 56a90e0ec372ffc49a548ef88c7a1c1f, type: 3}
   Rating: 87
   Shooting: 85

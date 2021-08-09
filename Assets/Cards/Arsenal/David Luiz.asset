@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: David Luiz
   m_EditorClassIdentifier: 
   PlayerName: David Luiz
-  Position: DFD
+  Position: DFC
   ArtWork: {fileID: 21300000, guid: 05b2385618eaca544863cf0dda8dca60, type: 3}
   Rating: 80
   Shooting: 65

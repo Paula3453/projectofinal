@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: De Jong
   m_EditorClassIdentifier: 
   PlayerName: De Jong
-  Position: MD
+  Position: MC
   ArtWork: {fileID: 21300000, guid: 76c09d1e9f2082a44b53f05679f5951c, type: 3}
   Rating: 85
   Shooting: 64

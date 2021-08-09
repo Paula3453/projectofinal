@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 296b770d3a8c9084784df9ca238fd6ca, type: 3}
   m_Name: Cristiano Ronaldo
   m_EditorClassIdentifier: 
-  PlayerName: Cristiano Ronaldo
-  Position: DI
+  PlayerName: Cristiano
+  Position: DEL
   ArtWork: {fileID: 21300000, guid: b3251f6bab7db5e428b3fa57496f4b20, type: 3}
   Rating: 92
   Shooting: 93
