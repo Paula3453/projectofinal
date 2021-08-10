@@ -24,4 +24,5 @@ public class PowerUps_Drop : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    
 }

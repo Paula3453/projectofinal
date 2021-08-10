@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class READ_SCRIPT : MonoBehaviour
-{   
+{
     public string textSaved;
     public Sprite clubImageSaved;
     public string clubNameSaved;
-    
+
     public GameObject Canvas;
     public GameObject Canvas2;
 
@@ -31,6 +31,30 @@ public class READ_SCRIPT : MonoBehaviour
     public CARD[] Inter_de_Milan;
     public CARD_DISPLAY[] cards;
 
+    public Spawn_Balones PowerUps;
+    public float UpShoot;
+    public Text UpShootText;
+    public float UpGRL;
+    public Text UpGRLText;
+
+    private void Start()
+    {
+        UpShoot = 0;
+    }
+    private void Update()
+    {
+        
+    }
+    public void PowerUp()
+    {
+        if (PowerUps.TiempoCD <= 0)
+        {
+            UpShoot += PowerUps.PwU_Shoot;
+            UpShootText.text = "x " + UpShoot;
+            UpGRL += PowerUps.PwU_GRL;
+            UpGRLText.text = "x " + UpGRL;
+        }
+    }
     public void READ(Text write)
     {
         textSaved = write.text;
@@ -42,7 +66,7 @@ public class READ_SCRIPT : MonoBehaviour
     {
         clubImageSaved = image.sprite;
         Debug.Log(clubImageSaved);
-        
+
         club.sprite = clubImageSaved;
         _name.text = textSaved;
         clubNameSaved = clubImageSaved.name;
@@ -51,9 +75,10 @@ public class READ_SCRIPT : MonoBehaviour
         {
             int i = 0;
             foreach (var item in cards)
-            { 
+            {
                 item.ChangePlayer(Real_Madrid[i]);
                 i++;
+                Real_Madrid[0].Rating;
             }
         }
         if (clubNameSaved == "Arsenal")

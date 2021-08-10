@@ -18,19 +18,32 @@ public class Spawn_Balones : MonoBehaviour
     public float MaxTiempoCD;
     public float TiempoCD;
     public Text TiempoText;
+
+    public bool playing = true;
+    public READ_SCRIPT read_script;
+
+    public GameObject[] Spawn;
+    float CurrentCD;
+    public float MaxCD;
+    public float x1;
+    public float x0;
+    public float y;
+
+    public float speedPwUp;
     // Start is called before the first frame update
     void Start()
     {
         BalonesText.text = "x " + Balones;
         InicioCD = 3;
         TiempoCD = MaxTiempoCD;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         InicioCD -= Time.deltaTime;
-        if (InicioCD <= 0 && TiempoCD >= 0)
+        if (InicioCD <= 0 && TiempoCD >= 0 && playing == true)
         {
             TiempoCD -= Time.deltaTime;
             TiempoText.text = ""+Mathf.RoundToInt(TiempoCD) + " \" ";
@@ -51,6 +64,24 @@ public class Spawn_Balones : MonoBehaviour
                     ContBalones(-1);
                 }
             }
+            if (CurrentCD >= MaxCD)
+            {
+                int numrandomSpawn = Random.Range(0, Spawn.Length);
+                Instantiate(Spawn[numrandomSpawn], new Vector3(Random.Range(x0, x1), y, 0), this.transform.rotation);
+                CurrentCD = 0;
+            }
+            if (CurrentCD < MaxCD)
+            {
+                CurrentCD += Time.deltaTime;
+            }
+           
+        }
+        if (TiempoCD<=0 && playing==true)
+        {
+            read_script.PowerUp();
+            playing = false;
+            TiempoCD = 15;
+            ContBalones(25);
         }
     }
     public void ContBalones(int numToAdd)
