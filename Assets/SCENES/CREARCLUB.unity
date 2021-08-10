@@ -1919,6 +1919,87 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6615481097577356913, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
   m_PrefabInstance: {fileID: 465069102}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &473938832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473938833}
+  - component: {fileID: 473938835}
+  - component: {fileID: 473938834}
+  m_Layer: 5
+  m_Name: daystext
+  m_TagString: count_days
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &473938833
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473938832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574951871}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -833, y: -46}
+  m_SizeDelta: {x: 160, y: 15}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &473938834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473938832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9433962, g: 0.9211463, b: 0.9211463, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f9549d7228afbe841b889d7f3f6fc3df, type: 3}
+    m_FontSize: 300
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 300
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: '
+
+'
+--- !u!222 &473938835
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473938832}
+  m_CullTransparentMesh: 1
 --- !u!114 &505613996 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 435793107764044387, guid: 550d64dd4a79a6343a469d312a7a7cae, type: 3}
@@ -2282,6 +2363,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 02ee50a6c742b7d4b816b31c33de1218, type: 2}
   - {fileID: 11400000, guid: c920dc0e7a7922d40b310da454a9bb09, type: 2}
   - {fileID: 11400000, guid: 5e34591ef5de8724a976f1e4428b21fa, type: 2}
+  RatingRealMadrid: 0
   Arsenal:
   - {fileID: 11400000, guid: 0509f172d3ea21d4b951097adbc398ef, type: 2}
   - {fileID: 11400000, guid: 89944e2f9ad1ed644b4d8c09bded49d6, type: 2}
@@ -2294,6 +2376,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 876aec7e4c024a945adc424776d54217, type: 2}
   - {fileID: 11400000, guid: 7599a29228263e3459d2243ad9ef152e, type: 2}
   - {fileID: 11400000, guid: 528ddc208e0d7ee4a92006e01d435614, type: 2}
+  RatingArsenal: 0
   Tottenham:
   - {fileID: 11400000, guid: 316e16c075fd06c4791cfa5ac39a8d89, type: 2}
   - {fileID: 11400000, guid: 586a4a073f14bd14086f614e57d6f46a, type: 2}
@@ -2306,6 +2389,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c0dddaccd94bffe4aae2499aa2d8283a, type: 2}
   - {fileID: 11400000, guid: eaa2a178913059f45ae2364d1605647c, type: 2}
   - {fileID: 11400000, guid: 7056045e5fd15574fbbd1803090d7ff4, type: 2}
+  RatingTottenham: 0
   Chelsea:
   - {fileID: 11400000, guid: b6199145f19786847b932b171fc312b7, type: 2}
   - {fileID: 11400000, guid: 65cecd68767dcde4aa08d000e6a900e6, type: 2}
@@ -2318,6 +2402,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 426cc141b8142be4791b4131348925d6, type: 2}
   - {fileID: 11400000, guid: 3a7b5d30874a1bd449d762c937c45b03, type: 2}
   - {fileID: 11400000, guid: e7e1daca408e72b4689401f5c7538e6b, type: 2}
+  RatingChelsea: 0
   Atletico_de_Madrid:
   - {fileID: 11400000, guid: 66925cca63665a54490c239bb149ba45, type: 2}
   - {fileID: 11400000, guid: 5514d4acb61e13040b4982ee6308b920, type: 2}
@@ -2330,6 +2415,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 555a17043ea4440429258b6bb04571c1, type: 2}
   - {fileID: 11400000, guid: eb3c8248b29713143bb6deda5810145d, type: 2}
   - {fileID: 11400000, guid: b96f254d6a1055b4690a666baa934da4, type: 2}
+  RatingAtleticoDeMadrid: 0
   Juventus:
   - {fileID: 11400000, guid: 72ebdb9eb0257b44b97eefad651faf7b, type: 2}
   - {fileID: 11400000, guid: 158cd189b9bd91a4dae2249e9cf168b0, type: 2}
@@ -2342,6 +2428,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: be7a988dcad303941a002eaa7e8044e0, type: 2}
   - {fileID: 11400000, guid: 9dc877f03ddb53944a115f3c1779b439, type: 2}
   - {fileID: 11400000, guid: 579b48f0b8ac73041a18088a759ac587, type: 2}
+  RatingJuventus: 0
   Milan:
   - {fileID: 11400000, guid: a358989a49c37d648b5ea40c503eab5f, type: 2}
   - {fileID: 11400000, guid: 067003ba80cfdcf439b83875ad9819c2, type: 2}
@@ -2354,6 +2441,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 806802b1eb380cc4882cb53b1214d4b0, type: 2}
   - {fileID: 11400000, guid: 66caa37eef7984c44a2d933648f30592, type: 2}
   - {fileID: 11400000, guid: 97bbcc244150f0f4282b7499803efac2, type: 2}
+  RatingMilan: 0
   Manchester_City:
   - {fileID: 11400000, guid: 3fec76af75df4724aa2c6578949076cf, type: 2}
   - {fileID: 11400000, guid: eb9ce86a2fbceb34ab4c7ca891f55729, type: 2}
@@ -2366,6 +2454,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 242af0265db5347478cb4678094ba11f, type: 2}
   - {fileID: 11400000, guid: 14327e4ce74a44f40b28c7066fb297e1, type: 2}
   - {fileID: 11400000, guid: 0d957af984353534e81e4e39370234fa, type: 2}
+  RatingManchesterCity: 0
   Liverpool:
   - {fileID: 11400000, guid: 8199ea3a65623cf4d8f6210eed6dd6c0, type: 2}
   - {fileID: 11400000, guid: 61cf539bb04feb444bc992a83a9732ea, type: 2}
@@ -2378,6 +2467,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 543f8f52e7f8b6a47b2028292c602378, type: 2}
   - {fileID: 11400000, guid: 522e7b791696bcd468301d25ec508ca0, type: 2}
   - {fileID: 11400000, guid: 89cc7f22424314440b10e7df09ddcb4c, type: 2}
+  RatingLiverpool: 0
   Manchester_United:
   - {fileID: 11400000, guid: b1f3f0e2ab7085344aa4481553c61497, type: 2}
   - {fileID: 11400000, guid: becd1b9a2ddd80b44b7d6ce5d73af507, type: 2}
@@ -2390,6 +2480,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 731554487521ec946a0fda20cb16dc1a, type: 2}
   - {fileID: 11400000, guid: 25d5b190545c53b4a9448bf0f9cdcd42, type: 2}
   - {fileID: 11400000, guid: 4301b50169933e748b08ddba913bb419, type: 2}
+  RatingManchesterUnited: 0
   Barcelona:
   - {fileID: 11400000, guid: 5fd5627e8833d614f816f57723a74376, type: 2}
   - {fileID: 11400000, guid: a6a0d159abe183c41ac9d80a35132adb, type: 2}
@@ -2402,6 +2493,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 652fd7f099c1c584a8206148e098e054, type: 2}
   - {fileID: 11400000, guid: e9e5b9ddc180a384c8db1eb6d7e37623, type: 2}
   - {fileID: 11400000, guid: 270723cf411d5084f8adfbfdad5d9c89, type: 2}
+  RatingBarcelona: 0
   Inter_de_Milan:
   - {fileID: 11400000, guid: 3178f6732979d9247976ffb608f23d1c, type: 2}
   - {fileID: 11400000, guid: 72d34460ec67a5743a47b914dee34f2a, type: 2}
@@ -2414,6 +2506,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 343ffab9c9792524a9f99d4885ba124c, type: 2}
   - {fileID: 11400000, guid: 8a8fd743166af1e4c9315e8722e49006, type: 2}
   - {fileID: 11400000, guid: 62b4fa12cea0dda4a8c0aa4222c3cb5d, type: 2}
+  RatingInterDeMilan: 0
   cards:
   - {fileID: 1525898869}
   - {fileID: 1873133844}
@@ -2431,6 +2524,7 @@ MonoBehaviour:
   UpShootText: {fileID: 69150140}
   UpGRL: 0
   UpGRLText: {fileID: 2075401845}
+  daystext: {fileID: 0}
 --- !u!1 &706559793
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,6 +5102,7 @@ RectTransform:
   - {fileID: 1722657623}
   - {fileID: 69150138}
   - {fileID: 2075401847}
+  - {fileID: 473938833}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

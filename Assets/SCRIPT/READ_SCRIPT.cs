@@ -37,6 +37,8 @@ public class READ_SCRIPT : MonoBehaviour
     public float UpGRL;
     public Text UpGRLText;
 
+    int count_days;
+    public Text daystext;
     private void Start()
     {
         UpShoot = 0;
@@ -237,5 +239,7 @@ public class READ_SCRIPT : MonoBehaviour
     {
         Canvas2.SetActive(true);
         _name.text = textSaved;
+         count_days++;
+        daystext.text = "díasrrr"+ count_days;
     }
 }

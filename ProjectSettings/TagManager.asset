@@ -19,6 +19,7 @@ TagManager:
   - milan
   - "bar\xE7a"
   - POR
+  - count_days
   layers:
   - Default
   - TransparentFX
