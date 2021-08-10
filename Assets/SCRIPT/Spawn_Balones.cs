@@ -34,7 +34,7 @@ public class Spawn_Balones : MonoBehaviour
     void Start()
     {
         BalonesText.text = "x " + Balones;
-        InicioCD = 3;
+        InicioCD = 2;
         TiempoCD = MaxTiempoCD;
 
     }
@@ -80,8 +80,10 @@ public class Spawn_Balones : MonoBehaviour
         {
             read_script.PowerUp();
             playing = false;
-            TiempoCD = 15;
-            ContBalones(25);
+            TiempoCD = 10;
+            ContBalones(30);
+            read_script.count_days++;
+            read_script.daystext.text = "DIA " + "" + read_script.count_days;
         }
     }
     public void ContBalones(int numToAdd)
@@ -99,5 +101,9 @@ public class Spawn_Balones : MonoBehaviour
     {
         PwU_GRL = PwU_GRL + numToAddGRL;
         GRLText.text = "x " + PwU_GRL;
+    }
+    public void Playing()
+    {
+        playing = true;
     }
 }
