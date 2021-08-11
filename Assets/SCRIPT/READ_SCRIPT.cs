@@ -58,6 +58,12 @@ public class READ_SCRIPT : MonoBehaviour
     public float RandomNum;
     public Text Ganador;
 
+    public Text[] Resultados;
+    public Text Jornada;
+
+    public Text[] Clasificacion;
+    public string[] Equipos;
+
     public string[] J1Local;
     public string[] J2Local;
     public string[] J3Local;
@@ -110,7 +116,6 @@ public class READ_SCRIPT : MonoBehaviour
         Visitantes[9] = J10Visitante;
         Visitantes[10] = J11Visitante;
 
-        BuildTeamDatabase();
         //print(GetTeam("Tottenham").ratingTeam);
         daystext.text = "DIA " + "" + count_days;
         UpShoot = 0;
@@ -120,9 +125,9 @@ public class READ_SCRIPT : MonoBehaviour
     {
 
         //print(((100 / (RatingRealMadrid + RatingBarcelona)) * RatingRealMadrid));
-        if (count_days % 7 == 0)
+        if (count_days % 2 == 0)
         {
-            int jornada = (int)count_days / 7;
+            int jornada = (int)count_days / 2;
             jornada--;
             for (int i = 0; i < Locales[jornada].Length; i++)
             {
@@ -132,14 +137,25 @@ public class READ_SCRIPT : MonoBehaviour
                 PorcentajeLocal = ((100 / (GetTeam(Locales[jornada][i]).ratingTeam + GetTeam(Visitantes[jornada][i]).ratingTeam)) * GetTeam(Locales[jornada][i]).ratingTeam);
                 if (RandomNum <= PorcentajeLocal)
                 {
-                    Ganador.text = Goles1 + " - " + Goles2;
+                    GetTeam(Locales[jornada][i]).puntos += 3;
+                    Resultados[i].text = GetTeam(Locales[jornada][i]).nombre + "  " + Goles1 + " - " + Goles2 + "  " + GetTeam(Visitantes[jornada][i]).nombre;
                 }
                 else
                 {
-                    Ganador.text = Goles2 + " - " + Goles1;
+                    GetTeam(Visitantes[jornada][i]).puntos += 3;
+                    Resultados[i].text = GetTeam(Locales[jornada][i]).nombre + "  " + Goles2 + " - " + Goles1 + "  " + GetTeam(Visitantes[jornada][i]).nombre;
                 }
+                Jornada.text = "JORNADA " + (jornada + 1);
+
             }
             count_days++;
+
+            for (int Pos = 0; Pos < 12; Pos++)
+            {
+                Clasificacion[Pos].text = GetTeam(Equipos[Pos]).nombre + ": " + GetTeam(Equipos[Pos]).puntos;
+
+
+            }
         }
 
     }
@@ -325,6 +341,8 @@ public class READ_SCRIPT : MonoBehaviour
                 i++;
             }
         }
+        BuildTeamDatabase();
+
     }
 
     public void ClubNameSaved(string clubName)
@@ -346,18 +364,18 @@ public class READ_SCRIPT : MonoBehaviour
     {
         equipos = new List<Team>()
         {
-            new Team("Real Madrid", RatingRealMadrid),
-            new Team("Tottenham", RatingTottenham),
-            new Team("Arsenal", RatingArsenal),
-            new Team("Atletico de Madrid", RatingAtleticoDeMadrid),
-            new Team("FC Barcelona", RatingBarcelona),
-            new Team("Inter de Milan", RatingInterDeMilan),
-            new Team("Juventus", RatingJuventus),
-            new Team("Liverpool", RatingLiverpool),
-            new Team("Manchester City", RatingManchesterCity),
-            new Team("Manchester United", RatingManchesterUnited),
-            new Team("Milan", RatingMilan),
-            new Team("Chelsea", RatingChelsea),
+            new Team("Real Madrid", RatingRealMadrid, 0),
+            new Team("Tottenham", RatingTottenham, 0),
+            new Team("Arsenal", RatingArsenal, 0),
+            new Team("Atletico de Madrid", RatingAtleticoDeMadrid, 0),
+            new Team("FC Barcelona", RatingBarcelona, 0),
+            new Team("Inter de Milan", RatingInterDeMilan, 0),
+            new Team("Juventus", RatingJuventus, 0),
+            new Team("Liverpool", RatingLiverpool, 0),
+            new Team("Manchester City", RatingManchesterCity, 0),
+            new Team("Manchester United", RatingManchesterUnited, 0),
+            new Team("Milan", RatingMilan, 0),
+            new Team("Chelsea", RatingChelsea, 0),
         };
     }
 }
@@ -366,15 +384,18 @@ public class Team
 {
     public string nombre;
     public float ratingTeam;
+    public int puntos;
 
-    public Team(string _nombre, float _ratingTeam)
+    public Team(string _nombre, float _ratingTeam, int _puntos)
     {
         nombre = _nombre;
         ratingTeam = _ratingTeam;
+        puntos = _puntos;
     }
     public Team(Team team)
     {
         this.nombre = team.nombre;
         this.ratingTeam = team.ratingTeam;
+        this.puntos = team.puntos;
     }
 }

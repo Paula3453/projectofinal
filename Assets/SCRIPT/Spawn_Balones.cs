@@ -81,7 +81,7 @@ public class Spawn_Balones : MonoBehaviour
         {
             read_script.PowerUp();
             playing = false;
-            TiempoCD = 10;
+            TiempoCD = 5;
             read_script.count_days++;
             read_script.daystext.text = "DIA " + "" + read_script.count_days;
             Balones = 30;
@@ -101,6 +101,11 @@ public class Spawn_Balones : MonoBehaviour
     }
     public void Playing()
     {
-        playing = true;
+        if (playing == false)
+        {
+            InicioCD = 2;
+            playing = true;
+        }
+        
     }
 }
