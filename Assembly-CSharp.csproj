@@ -63,6 +63,7 @@
     <Compile Include="Assets\SCRIPT\PowerUps_Drop.cs" />
     <Compile Include="Assets\SCRIPT\Sawn_PowerUps.cs" />
     <Compile Include="Assets\SCRIPT\READ_SCRIPT.cs" />
+    <Compile Include="Assets\SCRIPT\PARTIDOS.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -17,18 +17,31 @@ public class READ_SCRIPT : MonoBehaviour
     public Image club;
     public GameObject Escudos;
 
-    public CARD[] Real_Madrid; public float RatingRealMadrid;
-    public CARD[] Arsenal; public float RatingArsenal;
-    public CARD[] Tottenham; public float RatingTottenham;
-    public CARD[] Chelsea; public float RatingChelsea;
-    public CARD[] Atletico_de_Madrid; public float RatingAtleticoDeMadrid;
-    public CARD[] Juventus; public float RatingJuventus;
-    public CARD[] Milan; public float RatingMilan;
-    public CARD[] Manchester_City; public float RatingManchesterCity;
-    public CARD[] Liverpool; public float RatingLiverpool;
-    public CARD[] Manchester_United; public float RatingManchesterUnited;
-    public CARD[] Barcelona; public float RatingBarcelona;
-    public CARD[] Inter_de_Milan; public float RatingInterDeMilan;
+    public CARD[] Real_Madrid;
+    public float RatingRealMadrid;
+    public CARD[] Arsenal;
+    public float RatingArsenal;
+    public CARD[] Tottenham;
+    public float RatingTottenham;
+    public CARD[] Chelsea;
+    public float RatingChelsea;
+    public CARD[] Atletico_de_Madrid;
+    public float RatingAtleticoDeMadrid;
+    public CARD[] Juventus;
+    public float RatingJuventus;
+    public CARD[] Milan;
+    public float RatingMilan;
+    public CARD[] Manchester_City;
+    public float RatingManchesterCity;
+    public CARD[] Liverpool;
+    public float RatingLiverpool;
+    public CARD[] Manchester_United;
+    public float RatingManchesterUnited;
+    public CARD[] Barcelona;
+    public float RatingBarcelona;
+    public CARD[] Inter_de_Milan;
+    public float RatingInterDeMilan;
+
     public CARD_DISPLAY[] cards;
 
     public Spawn_Balones PowerUps;
@@ -39,14 +52,38 @@ public class READ_SCRIPT : MonoBehaviour
 
     public float count_days;
     public Text daystext;
+
+    public int resultado;
+    public float PorcentajeLocal;
+    public float RandomNum;
+    public Text Ganador;
+
     private void Start()
     {
         daystext.text = "DIA " + "" + count_days;
         UpShoot = 0;
-        count_days = 0;
+        count_days = 1;
     }
     private void Update()
     {
+
+        print(((100 / (RatingRealMadrid + RatingBarcelona)) * RatingRealMadrid));
+        if (count_days % 2 == 0)
+        {
+            RandomNum = Random.Range(0, 100);
+            int Goles1 = Random.Range(1, 8);
+            int Goles2 = Random.Range(0, Goles1);
+            PorcentajeLocal = ((100 / (RatingRealMadrid + RatingBarcelona)) * RatingRealMadrid);
+            if (RandomNum <= PorcentajeLocal)
+            {
+                Ganador.text = Goles1 + " - " + Goles2;
+            }
+            else
+            {
+                Ganador.text = Goles2 + " - " + Goles1;
+            }
+            count_days++;
+        }
 
     }
     public void PowerUp()
@@ -75,6 +112,54 @@ public class READ_SCRIPT : MonoBehaviour
         _name.text = textSaved;
         clubNameSaved = clubImageSaved.name;
 
+        for (int RealMadrid = 0; RealMadrid <= 10; RealMadrid++)
+        {
+            RatingRealMadrid = RatingRealMadrid + Real_Madrid[RealMadrid].Rating;
+        }
+        for (int Ars = 0; Ars <= 10; Ars++)
+        {
+            RatingArsenal = RatingArsenal + Arsenal[Ars].Rating;
+        }
+        for (int Tot = 0; Tot <= 10; Tot++)
+        {
+            RatingTottenham = RatingTottenham + Tottenham[Tot].Rating;
+        }
+        for (int Che = 0; Che <= 10; Che++)
+        {
+            RatingChelsea = RatingChelsea + Chelsea[Che].Rating;
+        }
+        for (int Atl = 0; Atl <= 10; Atl++)
+        {
+            RatingAtleticoDeMadrid = RatingAtleticoDeMadrid + Atletico_de_Madrid[Atl].Rating;
+        }
+        for (int Juv = 0; Juv <= 10; Juv++)
+        {
+            RatingJuventus = RatingJuventus + Juventus[Juv].Rating;
+        }
+        for (int Mil = 0; Mil <= 10; Mil++)
+        {
+            RatingMilan = RatingMilan + Milan[Mil].Rating;
+        }
+        for (int ManC = 0; ManC <= 10; ManC++)
+        {
+            RatingManchesterCity = RatingManchesterCity + Manchester_City[ManC].Rating;
+        }
+        for (int Liv = 0; Liv <= 10; Liv++)
+        {
+            RatingLiverpool = RatingLiverpool + Liverpool[Liv].Rating;
+        }
+        for (int ManU = 0; ManU <= 10; ManU++)
+        {
+            RatingManchesterUnited = RatingManchesterUnited + Manchester_United[ManU].Rating;
+        }
+        for (int Bar = 0; Bar <= 10; Bar++)
+        {
+            RatingBarcelona = RatingBarcelona + Barcelona[Bar].Rating;
+        }
+        for (int Int = 0; Int <= 10; Int++)
+        {
+            RatingInterDeMilan = RatingInterDeMilan + Inter_de_Milan[Int].Rating;
+        }
         if (clubNameSaved == "Real_Madrid")
         {
             int i = 0;
@@ -82,10 +167,6 @@ public class READ_SCRIPT : MonoBehaviour
             {
                 item.ChangePlayer(Real_Madrid[i]);
                 i++;
-            }
-            for (int RealMadrid = 0; RealMadrid <= 10; RealMadrid++)
-            {
-                RatingRealMadrid = RatingRealMadrid + Real_Madrid[RealMadrid].Rating;
             }
         }
         if (clubNameSaved == "Arsenal")
@@ -96,10 +177,6 @@ public class READ_SCRIPT : MonoBehaviour
                 item.ChangePlayer(Arsenal[i]);
                 i++;
             }
-            for (int Ars = 0; Ars <= 10; Ars++)
-            {
-                RatingArsenal = RatingArsenal + Arsenal[Ars].Rating;
-            }
         }
         if (clubNameSaved == "Tottenham")
         {
@@ -108,10 +185,6 @@ public class READ_SCRIPT : MonoBehaviour
             {
                 item.ChangePlayer(Tottenham[i]);
                 i++;
-            }
-            for (int Tot = 0; Tot <= 10; Tot++)
-            {
-                RatingTottenham = RatingTottenham + Tottenham[Tot].Rating;
             }
         }
         if (clubNameSaved == "Chelsea")
@@ -122,10 +195,6 @@ public class READ_SCRIPT : MonoBehaviour
                 item.ChangePlayer(Chelsea[i]);
                 i++;
             }
-            for (int Che = 0; Che <= 10; Che++)
-            {
-                RatingChelsea = RatingChelsea + Chelsea[Che].Rating;
-            }
         }
         if (clubNameSaved == "Atletico_de_Madrid")
         {
@@ -134,10 +203,6 @@ public class READ_SCRIPT : MonoBehaviour
             {
                 item.ChangePlayer(Atletico_de_Madrid[i]);
                 i++;
-            }
-            for (int Atl = 0; Atl <= 10; Atl++)
-            {
-                RatingAtleticoDeMadrid = RatingAtleticoDeMadrid + Atletico_de_Madrid[Atl].Rating;
             }
         }
         if (clubNameSaved == "Juventus")
@@ -148,10 +213,6 @@ public class READ_SCRIPT : MonoBehaviour
                 item.ChangePlayer(Juventus[i]);
                 i++;
             }
-            for (int Juv = 0; Juv <= 10; Juv++)
-            {
-                RatingJuventus = RatingJuventus + Juventus[Juv].Rating;
-            }
         }
         if (clubNameSaved == "Milan")
         {
@@ -160,10 +221,6 @@ public class READ_SCRIPT : MonoBehaviour
             {
                 item.ChangePlayer(Milan[i]);
                 i++;
-            }
-            for (int Mil = 0; Mil <= 10; Mil++)
-            {
-                RatingMilan = RatingMilan + Milan[Mil].Rating;
             }
         }
         if (clubNameSaved == "Manchester_City")
@@ -174,10 +231,6 @@ public class READ_SCRIPT : MonoBehaviour
                 item.ChangePlayer(Manchester_City[i]);
                 i++;
             }
-            for (int ManC = 0; ManC <= 10; ManC++)
-            {
-                RatingManchesterCity = RatingManchesterCity + Manchester_City[ManC].Rating;
-            }
         }
         if (clubNameSaved == "Liverpool")
         {
@@ -186,10 +239,6 @@ public class READ_SCRIPT : MonoBehaviour
             {
                 item.ChangePlayer(Liverpool[i]);
                 i++;
-            }
-            for (int Liv = 0; Liv <= 10; Liv++)
-            {
-                RatingLiverpool = RatingLiverpool + Liverpool[Liv].Rating;
             }
         }
         if (clubNameSaved == "Manchester_United")
@@ -200,10 +249,6 @@ public class READ_SCRIPT : MonoBehaviour
                 item.ChangePlayer(Manchester_United[i]);
                 i++;
             }
-            for (int ManU = 0; ManU <= 10; ManU++)
-            {
-                RatingManchesterUnited = RatingManchesterUnited + Manchester_United[ManU].Rating;
-            }
         }
         if (clubNameSaved == "Barcelona")
         {
@@ -213,10 +258,6 @@ public class READ_SCRIPT : MonoBehaviour
                 item.ChangePlayer(Barcelona[i]);
                 i++;
             }
-            for (int Bar = 0; Bar <= 10; Bar++)
-            {
-                RatingBarcelona = RatingBarcelona + Barcelona[Bar].Rating;
-            }
         }
         if (clubNameSaved == "Inter_de_Milan")
         {
@@ -225,10 +266,6 @@ public class READ_SCRIPT : MonoBehaviour
             {
                 item.ChangePlayer(Inter_de_Milan[i]);
                 i++;
-            }
-            for (int Int = 0; Int <= 10; Int++)
-            {
-                RatingInterDeMilan = RatingInterDeMilan + Inter_de_Milan[Int].Rating;
             }
         }
     }
@@ -241,6 +278,6 @@ public class READ_SCRIPT : MonoBehaviour
     {
         Canvas2.SetActive(true);
         _name.text = textSaved;
-        daystext.text = "días "+ count_days;
+        daystext.text = "días " + count_days;
     }
 }
