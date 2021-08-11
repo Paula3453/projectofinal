@@ -2607,6 +2607,160 @@ MonoBehaviour:
   PorcentajeLocal: 0
   RandomNum: 0
   Ganador: {fileID: 295545656}
+  J1Local:
+  - Tottenham
+  - Liverpool
+  - Juventus
+  - FC Barcelona
+  - Inter de Milan
+  - Manchester United
+  J2Local:
+  - Mancheste City
+  - Chelsea
+  - Real ,Madrid
+  - Milan
+  - Arsenal
+  - Manchester United
+  J3Local:
+  - Tottenham
+  - Manchester City
+  - Atletico de Madrid
+  - Liverpool
+  - Juventus
+  - FC Barcelona
+  J4Local:
+  - Real Madrid
+  - Milan
+  - Arsenal
+  - Manchester United
+  - Inter de Milan
+  - FC Barcelona
+  J5Local:
+  - Tottenham
+  - Real Madrid
+  - Chelsea
+  - Manchester City
+  - Atletico de Madrid
+  - Liverpool
+  J6Local:
+  - Arsenal
+  - Manchester United
+  - Inter de Milan
+  - FC Barcelona
+  - Juventus
+  - Liverpool
+  J7Local:
+  - Tottenham
+  - Arsenal
+  - Milan
+  - Real Madrid
+  - Chelsea
+  - Manchester City
+  J8Local:
+  - Inter de Milan
+  - FC Barcelona
+  - Juventus
+  - Liverpool
+  - Atletico de Madrid
+  - Manchester City
+  J9Local:
+  - Tottenham
+  - Inter de Milan
+  - Manchester United
+  - Arsenal
+  - Milan
+  - Real Madrid
+  J10Local:
+  - Juventus
+  - Liverpool
+  - Atletico de Madrid
+  - Manchester City
+  - Chelsea
+  - Real Madrid
+  J11Local:
+  - Tottenham
+  - Juventus
+  - FC Barcelona
+  - Inter de Milan
+  - Manchester United
+  - Arsenal
+  J1Visitante:
+  - Atletico de Madrid
+  - Manchester City
+  - Chelsea
+  - Real Madrid
+  - Milan
+  - Arsenal
+  J2Visitante:
+  - Tottenham
+  - Atletico de Madrid
+  - Liverpool
+  - Juventus
+  - FC Barcelona
+  - Inter de Milan
+  J3Visitante:
+  - Chelsea
+  - Real Madrid
+  - Milan
+  - Arsenal
+  - Manchester United
+  - Inter de Milan
+  J4Visitante:
+  - Tottenham
+  - Chelsea
+  - Manchester City
+  - Atletico de Madrid
+  - Liverpool
+  - Juventus
+  J5Visitante:
+  - Milan
+  - Arsenal
+  - Manchester United
+  - Inter  de Milan
+  - FC Barcelona
+  - Juventus
+  J6Visitante:
+  - Tottenham
+  - Milan
+  - Real Madrid
+  - Chelsea
+  - Manchester City
+  - Atletico de Madrid
+  J7Visitante:
+  - Manchester United
+  - Inter de Milan
+  - FC Barcelona
+  - Juventus
+  - Liverpool
+  - Atletico de Madrid
+  J8Visitante:
+  - Tottenham
+  - Manchester United
+  - Arsenal
+  - Milan
+  - Real Madrid
+  - Chelsea
+  J9Visitante:
+  - FC Barcelona
+  - Juventus
+  - Liverpool
+  - Atletico de Madrid
+  - Manchester City
+  - Chelsea
+  J10Visitante:
+  - Tottenham
+  - FC Barcelona
+  - Inter de Milan
+  - Manchester United
+  - Arsenal
+  - Milan
+  J11Visitante:
+  - Liverpool
+  - Atletico de Madrid
+  - Manchester City
+  - Chelsea
+  - Real Madrid
+  - Milan
 --- !u!1 &706559793
 GameObject:
   m_ObjectHideFlags: 0

@@ -61,7 +61,8 @@ public class Spawn_Balones : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     Instantiate(Shoot, this.transform.position, Shoot.transform.rotation);
-                    ContBalones(-1);
+                    //ContBalones(-1);
+                    Balones--;
                 }
             }
             if (CurrentCD >= MaxCD)
@@ -81,14 +82,10 @@ public class Spawn_Balones : MonoBehaviour
             read_script.PowerUp();
             playing = false;
             TiempoCD = 10;
-            ContBalones(30);
             read_script.count_days++;
             read_script.daystext.text = "DIA " + "" + read_script.count_days;
+            Balones = 30;
         }
-    }
-    public void ContBalones(int numToAdd)
-    {
-        Balones = Balones + numToAdd;
         BalonesText.text = "x " + Balones;
     }
 

@@ -58,8 +58,60 @@ public class READ_SCRIPT : MonoBehaviour
     public float RandomNum;
     public Text Ganador;
 
+    public string[] J1Local;
+    public string[] J2Local;
+    public string[] J3Local;
+    public string[] J4Local;
+    public string[] J5Local;
+    public string[] J6Local;
+    public string[] J7Local;
+    public string[] J8Local;
+    public string[] J9Local;
+    public string[] J10Local;
+    public string[] J11Local;
+    string[][] Locales = new string[11][];
+    public string[] J1Visitante;
+    public string[] J2Visitante;
+    public string[] J3Visitante;
+    public string[] J4Visitante;
+    public string[] J5Visitante;
+    public string[] J6Visitante;
+    public string[] J7Visitante;
+    public string[] J8Visitante;
+    public string[] J9Visitante;
+    public string[] J10Visitante;
+    public string[] J11Visitante;
+    string[][] Visitantes = new string[11][];
+    public List<Team> equipos = new List<Team>();
+
     private void Start()
     {
+        Locales[0] = J1Local;
+        Locales[1] = J2Local;
+        Locales[2] = J3Local;
+        Locales[3] = J4Local;
+        Locales[4] = J5Local;
+        Locales[5] = J6Local;
+        Locales[6] = J7Local;
+        Locales[7] = J8Local;
+        Locales[8] = J9Local;
+        Locales[9] = J10Local;
+        Locales[10] = J11Local;
+
+        Visitantes[0] = J1Visitante;
+        Visitantes[1] = J2Visitante;
+        Visitantes[2] = J3Visitante;
+        Visitantes[3] = J4Visitante;
+        Visitantes[4] = J5Visitante;
+        Visitantes[5] = J6Visitante;
+        Visitantes[6] = J7Visitante;
+        Visitantes[7] = J8Visitante;
+        Visitantes[8] = J9Visitante;
+        Visitantes[9] = J10Visitante;
+        Visitantes[10] = J11Visitante;
+
+        BuildTeamDatabase();
+        //print(GetTeam("Tottenham").ratingTeam);
         daystext.text = "DIA " + "" + count_days;
         UpShoot = 0;
         count_days = 1;
@@ -67,20 +119,25 @@ public class READ_SCRIPT : MonoBehaviour
     private void Update()
     {
 
-        print(((100 / (RatingRealMadrid + RatingBarcelona)) * RatingRealMadrid));
-        if (count_days % 2 == 0)
+        //print(((100 / (RatingRealMadrid + RatingBarcelona)) * RatingRealMadrid));
+        if (count_days % 7 == 0)
         {
-            RandomNum = Random.Range(0, 100);
-            int Goles1 = Random.Range(1, 8);
-            int Goles2 = Random.Range(0, Goles1);
-            PorcentajeLocal = ((100 / (RatingRealMadrid + RatingBarcelona)) * RatingRealMadrid);
-            if (RandomNum <= PorcentajeLocal)
+            int jornada = (int)count_days / 7;
+            jornada--;
+            for (int i = 0; i < Locales[jornada].Length; i++)
             {
-                Ganador.text = Goles1 + " - " + Goles2;
-            }
-            else
-            {
-                Ganador.text = Goles2 + " - " + Goles1;
+                RandomNum = Random.Range(0, 100);
+                int Goles1 = Random.Range(1, 8);
+                int Goles2 = Random.Range(0, Goles1);
+                PorcentajeLocal = ((100 / (GetTeam(Locales[jornada][i]).ratingTeam + GetTeam(Visitantes[jornada][i]).ratingTeam)) * GetTeam(Locales[jornada][i]).ratingTeam);
+                if (RandomNum <= PorcentajeLocal)
+                {
+                    Ganador.text = Goles1 + " - " + Goles2;
+                }
+                else
+                {
+                    Ganador.text = Goles2 + " - " + Goles1;
+                }
             }
             count_days++;
         }
@@ -279,5 +336,45 @@ public class READ_SCRIPT : MonoBehaviour
         Canvas2.SetActive(true);
         _name.text = textSaved;
         daystext.text = "días " + count_days;
+    }
+
+    public Team GetTeam(string nombreEquipo)
+    {
+        return equipos.Find(team => team.nombre == nombreEquipo);
+    }
+    void BuildTeamDatabase()
+    {
+        equipos = new List<Team>()
+        {
+            new Team("Real Madrid", RatingRealMadrid),
+            new Team("Tottenham", RatingTottenham),
+            new Team("Arsenal", RatingArsenal),
+            new Team("Atletico de Madrid", RatingAtleticoDeMadrid),
+            new Team("FC Barcelona", RatingBarcelona),
+            new Team("Inter de Milan", RatingInterDeMilan),
+            new Team("Juventus", RatingJuventus),
+            new Team("Liverpool", RatingLiverpool),
+            new Team("Manchester City", RatingManchesterCity),
+            new Team("Manchester United", RatingManchesterUnited),
+            new Team("Milan", RatingMilan),
+            new Team("Chelsea", RatingChelsea),
+        };
+    }
+}
+
+public class Team
+{
+    public string nombre;
+    public float ratingTeam;
+
+    public Team(string _nombre, float _ratingTeam)
+    {
+        nombre = _nombre;
+        ratingTeam = _ratingTeam;
+    }
+    public Team(Team team)
+    {
+        this.nombre = team.nombre;
+        this.ratingTeam = team.ratingTeam;
     }
 }
