@@ -58,7 +58,7 @@ public class Spawn_Balones : MonoBehaviour
             }
             if (Balones >= 1)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     Instantiate(Shoot, this.transform.position, Shoot.transform.rotation);
                     //ContBalones(-1);

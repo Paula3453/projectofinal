@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Linq;
 
 public class READ_SCRIPT : MonoBehaviour
 {
@@ -63,6 +64,7 @@ public class READ_SCRIPT : MonoBehaviour
 
     public Text[] Clasificacion;
     public string[] Equipos;
+    Dictionary<string, int> clasificacion = new Dictionary<string, int>();
 
     public string[] J1Local;
     public string[] J2Local;
@@ -89,6 +91,7 @@ public class READ_SCRIPT : MonoBehaviour
     public string[] J11Visitante;
     string[][] Visitantes = new string[11][];
     public List<Team> equipos = new List<Team>();
+
 
     private void Start()
     {
@@ -120,6 +123,8 @@ public class READ_SCRIPT : MonoBehaviour
         daystext.text = "DIA " + "" + count_days;
         UpShoot = 0;
         count_days = 1;
+
+
     }
     private void Update()
     {
@@ -127,8 +132,14 @@ public class READ_SCRIPT : MonoBehaviour
         //print(((100 / (RatingRealMadrid + RatingBarcelona)) * RatingRealMadrid));
         if (count_days % 2 == 0)
         {
+
             int jornada = (int)count_days / 2;
             jornada--;
+
+            if (jornada >= 12)
+            {
+                jornada -= 12;
+            }
             for (int i = 0; i < Locales[jornada].Length; i++)
             {
                 RandomNum = Random.Range(0, 100);
@@ -137,27 +148,55 @@ public class READ_SCRIPT : MonoBehaviour
                 PorcentajeLocal = ((100 / (GetTeam(Locales[jornada][i]).ratingTeam + GetTeam(Visitantes[jornada][i]).ratingTeam)) * GetTeam(Locales[jornada][i]).ratingTeam);
                 if (RandomNum <= PorcentajeLocal)
                 {
+                    if (clubNameSaved == GetTeam(Locales[jornada][i]).nombre)
+                    {
+                        Resultados[i].color = Color.green;
+                        
+                    }
+                    else
+                    {
+                        Resultados[i].color = Color.white;
+                    }
                     GetTeam(Locales[jornada][i]).puntos += 3;
+                    clasificacion[GetTeam(Locales[jornada][i]).nombre] += 3;
                     Resultados[i].text = GetTeam(Locales[jornada][i]).nombre + "  " + Goles1 + " - " + Goles2 + "  " + GetTeam(Visitantes[jornada][i]).nombre;
                 }
                 else
                 {
+                    if (clubNameSaved == GetTeam(Visitantes[jornada][i]).nombre)
+                    {
+                        Resultados[i].color = Color.green;
+                    }
+                    else
+                    {
+                        Resultados[i].color = Color.white;
+                    }
                     GetTeam(Visitantes[jornada][i]).puntos += 3;
+                    clasificacion[GetTeam(Visitantes[jornada][i]).nombre] += 3;
                     Resultados[i].text = GetTeam(Locales[jornada][i]).nombre + "  " + Goles2 + " - " + Goles1 + "  " + GetTeam(Visitantes[jornada][i]).nombre;
                 }
-                Jornada.text = "JORNADA " + (jornada + 1);
+                Jornada.text = "JORNADA " + ((int)count_days / 2 );
 
             }
             count_days++;
 
+            var myList = clasificacion.ToList();
+
+            myList.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
+
             for (int Pos = 0; Pos < 12; Pos++)
             {
-                Clasificacion[Pos].text = GetTeam(Equipos[Pos]).nombre + ": " + GetTeam(Equipos[Pos]).puntos;
-
-
+                if (myList[Pos].Key == clubNameSaved)
+                {
+                    Clasificacion[Pos].color = Color.green;
+                }
+                else
+                {
+                    Clasificacion[Pos].color = Color.white;
+                }
+                Clasificacion[Pos].text = (myList[Pos].Key + ": " + myList[Pos].Value);
             }
         }
-
     }
     public void PowerUp()
     {
@@ -342,6 +381,10 @@ public class READ_SCRIPT : MonoBehaviour
             }
         }
         BuildTeamDatabase();
+        foreach (var item in Equipos)
+        {
+            clasificacion.Add(GetTeam(item).nombre, GetTeam(item).puntos);
+        }
 
     }
 
@@ -364,18 +407,18 @@ public class READ_SCRIPT : MonoBehaviour
     {
         equipos = new List<Team>()
         {
-            new Team("Real Madrid", RatingRealMadrid, 0),
-            new Team("Tottenham", RatingTottenham, 0),
-            new Team("Arsenal", RatingArsenal, 0),
-            new Team("Atletico de Madrid", RatingAtleticoDeMadrid, 0),
-            new Team("FC Barcelona", RatingBarcelona, 0),
-            new Team("Inter de Milan", RatingInterDeMilan, 0),
-            new Team("Juventus", RatingJuventus, 0),
-            new Team("Liverpool", RatingLiverpool, 0),
-            new Team("Manchester City", RatingManchesterCity, 0),
-            new Team("Manchester United", RatingManchesterUnited, 0),
-            new Team("Milan", RatingMilan, 0),
-            new Team("Chelsea", RatingChelsea, 0),
+            new Team("Real Madrid", RatingRealMadrid, 0, 1),
+            new Team("Tottenham", RatingTottenham, 0, 2),
+            new Team("Arsenal", RatingArsenal, 0, 3),
+            new Team("Atletico de Madrid", RatingAtleticoDeMadrid, 0, 4),
+            new Team("FC Barcelona", RatingBarcelona, 0, 5),
+            new Team("Inter de Milan", RatingInterDeMilan, 0, 6),
+            new Team("Juventus", RatingJuventus, 0, 7),
+            new Team("Liverpool", RatingLiverpool, 0, 8),
+            new Team("Manchester City", RatingManchesterCity, 0,9),
+            new Team("Manchester United", RatingManchesterUnited, 0, 10),
+            new Team("Milan", RatingMilan, 0, 11),
+            new Team("Chelsea", RatingChelsea, 0,12) ,
         };
     }
 }
@@ -385,17 +428,20 @@ public class Team
     public string nombre;
     public float ratingTeam;
     public int puntos;
+    public int posicion;
 
-    public Team(string _nombre, float _ratingTeam, int _puntos)
+    public Team(string _nombre, float _ratingTeam, int _puntos, int _posicion)
     {
         nombre = _nombre;
         ratingTeam = _ratingTeam;
         puntos = _puntos;
+        posicion = _posicion;
     }
     public Team(Team team)
     {
         this.nombre = team.nombre;
         this.ratingTeam = team.ratingTeam;
         this.puntos = team.puntos;
+        this.posicion = team.posicion;
     }
 }
